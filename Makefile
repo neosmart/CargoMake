@@ -22,16 +22,16 @@ clean:
 doc:
 	@$(CARGO) doc
 
-install:
+install: build
 	@$(CARGO) install
 
 publish:
 	@$(CARGO) publish
 
-run:
+run: build
 	@$(CARGO) run
 
-test:
+test: build
 	@$(CARGO) test
 
 update:
