@@ -1,4 +1,5 @@
 # CargoMake by NeoSmart Technologies
+# Written and maintained by Mahmoud Al-Qudsi <mqudsi@neosmart.net>
 # Released under the MIT public license
 # Obtain updates from https://github.com/neosmart/CargoMake
 
