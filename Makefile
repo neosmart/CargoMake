@@ -2,7 +2,8 @@
 # Released under the MIT public license
 # Obtain updates from https://github.com/neosmart/CargoMake
 
-CARGO = cargo
+COLOR ?= always # Valid COLOR options: {always, auto, never}
+CARGO = cargo --color $(COLOR)
 
 .PHONY: all bench build check clean doc install publish run test update
 
@@ -36,3 +37,4 @@ test: build
 
 update:
 	@$(CARGO) update
+
