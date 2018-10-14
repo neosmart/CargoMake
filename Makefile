@@ -16,7 +16,8 @@ bench:
 build:
 	@$(CARGO) build
 
-check: build test
+check:
+	@$(CARGO) check
 
 clean:
 	@$(CARGO) clean
