@@ -10,33 +10,14 @@ CARGO = cargo --color $(COLOR)
 
 all: build
 
-bench:
-	@$(CARGO) bench
-
-build:
-	@$(CARGO) build
-
-check:
-	@$(CARGO) check
-
-clean:
-	@$(CARGO) clean
-
-doc:
-	@$(CARGO) doc
+bench build check clean doc publish update:
+	@$(CARGO) $@
 
 install: build
 	@$(CARGO) install
-
-publish:
-	@$(CARGO) publish
 
 run: build
 	@$(CARGO) run
 
 test: build
 	@$(CARGO) test
-
-update:
-	@$(CARGO) update
-
